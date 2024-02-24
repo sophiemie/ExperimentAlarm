@@ -8,9 +8,9 @@ assignees: ''
 ---
 
 ## Akzeptanzkriterien
-- [] was muss erfüllt sein?
+- [ ] was muss erfüllt sein?
 
 ## DoD
-- [] muss ein anderes Item vorher erledigt sein? wenn ja dann link hinzufügen
+- [ ] muss ein anderes Item vorher erledigt sein? wenn ja dann link hinzufügen
 - https://github.com/sophiemie/ExperimentAlarm/issues/itemnummer
-- [] wann gilt das Item als erfüllt?
+- [ ] wann gilt das Item als erfüllt?
