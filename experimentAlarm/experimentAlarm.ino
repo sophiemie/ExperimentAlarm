@@ -6,30 +6,35 @@
 
 // Verwendete Pins vom Board
 const int LED = 6;
-const int pirPin = 2;
+const int bewegungsPin = 2;
 
 // Variablen
-int pirStat = 0;
+int bewegungsStat = 0;
+bool neueBewegung = true;
 
 /* Initialisierungen */
 void setup() {
   // Definierung der In- und Outputs
   pinMode(LED, OUTPUT);
-  pinMode(pirPin, INPUT);
+  pinMode(bewegungsPin, INPUT);
   // Definierung der Baudrate
   Serial.begin(9600);
 }
 
 /* Programmcode */
 void loop() {
-  pirStat = digitalRead(pirPin);
+  bewegungsStat = digitalRead(bewegungsPin);
 
-  if (pirStat == HIGH) {
-  digitalWrite(LED, HIGH);
-  Serial.println("Bewegung erkannt!"); // Aktuell wird es ganz oft ausgegeben
+  if (bewegungsStat == HIGH) {
+    if (neueBewegung) {
+      neueBewegung = false;
+      digitalWrite(LED, HIGH);
+      Serial.println("Bewegung erkannt!");
+    }
   }
   else {
-  digitalWrite(LED, LOW);
+    digitalWrite(LED, LOW);
+    neueBewegung = true;
   }
 
 }
