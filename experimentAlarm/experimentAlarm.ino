@@ -23,9 +23,12 @@ void setup() {
 
 /* Programmcode */
 void loop() {
-  bewegungsStat = digitalRead(bewegungsPin);
+  // Auslesen vom Bewegungssensor
+  bewegungsStat = digitalRead(bewegungsPin); 
 
+  
   if (bewegungsStat == HIGH) {
+    // Wenn neue Bewegung erkannt
     if (neueBewegung) {
       neueBewegung = false;
       digitalWrite(LED, HIGH);
@@ -34,7 +37,12 @@ void loop() {
   }
   else {
     digitalWrite(LED, LOW);
-    neueBewegung = true;
+
+    // Wenn Bewegungsstatus sich von 1 auf 0 aendert
+    if (!neueBewegung) {
+      neueBewegung = true;
+      Serial.println("Keine Bewegung erkannt!");
+    }
   }
 
 }
