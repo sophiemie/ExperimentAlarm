@@ -17,18 +17,18 @@ const int LED = 6;
 const int bewegungsPin = 2;
 const int lautsprecherPin = 5;
 
-// Variabeln Bewegunsmelder
+// Variablen Bewegunsmelder
 int bewegungsStat = 0;
 bool neueBewegung = true;
 
-//Variabeln Lautsprecher
+//Variablen Lautsprecher
 int tonHoehe1 = 100;
 int tonHoehe2 = 200;
 int sirenenInterval = 500;
 
-//Sich ändernde Variabeln
+//Sich aendernde Variablen
 int tonJetzt = 100;
-unsigned long vorherigeMillis = 0;   // speichert wann der Lautsprecher das letzte Mal den Ton geänder hat (um delay zu umgehen)
+unsigned long vorherigeMillis = 0;   // speichert wann der Lautsprecher das letzte Mal den Ton geaedert hat (um delay zu umgehen)
 unsigned long jetzigeMillis = 0;
 
 /* Initialisierungen */
@@ -92,7 +92,7 @@ void sireneAbspielen(){
       // Wenn der Ton1 gespielt wurde, spiel den Ton2 und vice-versa:
       tonJetzt = (tonJetzt == tonHoehe1) ? tonHoehe2 : tonHoehe1;
 
-      // spiel den Ton:
+      // Spiel den Ton:
       tone(lautsprecherPin, tonJetzt);
 
       // speicher die letzte Zeit, die der Ton gespielt wurde
