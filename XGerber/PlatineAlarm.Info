@@ -1,0 +1,32 @@
+CAM-Ausgabe für Projekt / CAM Output for Project PlatineAlarm.T3001
+Ausgabe am / Output Date 21. Apr 2024, 20:40h
+Projekt erzeugt mit / Project created with TARGET 32.2.0.72 discover
+Ausgabe erzeugt mit / Output created with TARGET 3001! V32.2.0.72
+Projekt von TARGET NC-Edition: Kommerzielle Nutzung ist strafbar!
+Project created with TARGET NC edition: Commercial use will be punished!
+Lieferanschrift / Delivery address:
+  
+  
+  
+  D- 
+  Tel: 
+  FAX: 
+  eMail: 
+Größe der Platine / Size of PCB: 79,0575 mm x 60,0075 mm
+Dicke der Platine / Thickness of PCB: 1,6 mm
+KupferDicke / Copper thickness: 35 µm
+
+Beschreibung der erzeugten Dateien / Description of generated files:
+
+PlatineAlarm.Top = 16 = Kupfer oben / Copper top L1   ( *.Top )
+PlatineAlarm.Bot = 2 = Kupfer unten / Copper bottom L2   ( *.Bot )
+PlatineAlarm.Tool = Bohrerliste / Drill tool list
+PlatineAlarm.Drill = Durchkontaktierte Bohrungen / Plated through drills
+PlatineAlarm.Outline = 23 = Platinen-Umriss / PCB outline   ( *.Outline )
+PlatineAlarm.StopTop = 18 = Lötstoppmaske oben / Solder stop top   ( *.StopTop )
+PlatineAlarm.StopBot = 4 = Lötstoppmaske unten / Solder stop bottom   ( *.StopBot )
+PlatineAlarm.PosiTop = 21 = Bestückungsdruck oben / Silk screen top   ( *.PosiTop )
+PlatineAlarm.PosiBot = 7 = Bestückungsdruck unten / Silk screen bottom   ( *.PosiBot )
+
+
+Achtung: Dünnste Schrift (Font too thin) ist kleiner 0,150mm: (0,130 bei -35,782501 | 6,57) auf Ebene 21
